@@ -23,9 +23,10 @@ const About = () => {
       </div>
     </div>
     <div className="about-section__content">
-      <img src={ProfilImage} alt="Fabrice MAGNAN de BELLEVUE" className="about-section__photo" />
+      <img src={ProfilImage} alt="une photo de moi Fabrice MAGNAN de BELLEVUE" className="about-section__photo" />
       <div className="about-section__description">
-        <p><strong>Fabrice MAGNAN de BELLEVUE</strong></p>
+      {/* <p><strong>Fabrice MAGNAN de BELLEVUE</strong></p> */}
+        <h2>Fabrice MAGNAN de BELLEVUE</h2>
             <div className="about-section__item">
               <FaCode className="about-section__icon" />
               <span><strong>{t('about.professionalExperienceTitle')} :</strong> {t('about.professionalExperience')}</span>

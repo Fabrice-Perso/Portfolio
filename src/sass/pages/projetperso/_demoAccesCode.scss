@@ -25,10 +25,10 @@
         text-decoration: none;
         color: white;
         font-weight: bold;
-        background: #007FFF;
+        background:  $primary-color;
         box-shadow: 0 2px 4px $box-shadow-color;
         &:hover {
-          background: darken(#007FFF, 10%);
+          background: darken( $primary-color, 10%);
         }
         .icon {
           display: block;

@@ -198,17 +198,20 @@
         position: absolute;
         bottom: 0;
         right: 5px;
-        color: $link-color;
+        color: $card-background; /* Texte blanc */
+        background-color: $primary-color; /* Fond bleu */
         cursor: pointer;
         font-size: 0.9em;
         display: flex;
         align-items: center;
-        
+        padding: 2px 8px; /* Ajouter du padding pour rendre le lien plus visible */
+        border-radius: 4px; /* Coins arrondis pour un meilleur style */
+      
         &:hover {
+          background-color: darken($primary-color, 10%); /* Couleur de fond légèrement plus foncée au survol */
           text-decoration: underline;
         }
-        
-        // Assurez-vous que l'icône ou le texte "Voir plus/Lire moins" est correctement positionné
+      
         i, svg {
           margin-left: 5px;
         }

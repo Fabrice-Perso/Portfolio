@@ -2,10 +2,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath } from 'url';
+import generateSitemap from 'vite-plugin-sitemap';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    generateSitemap({
+      hostname: 'https://portfolio.fabwebprojects.fr',       
+    }),
+  ],
   base: process.env.NODE_ENV === "production" ? "/" : "/",
   server: {
     historyApiFallback: true,

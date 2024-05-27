@@ -19,7 +19,7 @@ const CertificationCard = ({ certification }) => {
     <div className="certification-card">
       <img
         src={imagesCertifFormation[certification.img]}
-        alt={translatedName}
+        alt={`Certificat Obtenu sur le site OC : ${translatedName}`} 
         className="certification-image"
         onClick={openModal}
       />
